@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <div class="logo">Manisha</div>
+
+  <nav>
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#my_skills">Skills</a>
+    <a href="#qualification">Qualification</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact-Me</a>
+  </nav>
+
+  <div class="theme-toggle" onclick="toggleTheme()">
+    <i class="ri-sun-line" id="theme-icon"></i>
+  </div>
+</header>
+
+<!-- Home  HERO SECTION -->
+<section class="hero" id="home">
+
+    <!-- LEFT -->
+    <div class="hero-left">
+    
+        <div class="social-icons">
+            <i class="ri-linkedin-line"></i>
+            <i class="ri-github-line"></i>
+        </div>
+
+        <div class="hero-middle">
+            <h1>Hi, I'm <br> <span>Manisha</span></h1>
+
+            <h3>Web Developer | Python Developer | Salesforce Administrator</h3>
+
+            <p>
+                An engineering undergraduate at Sri Indu College Of Engineering & Technology,
+                Rangareddy.
+            </p>
+
+            <div class="tag">
+              <a href="#contact" id="contact-tag">Contact Me <i class="fa-solid fa-circle-chevron-right"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="hero-right">
+        <div class="image-bg">
+            <img src="Mani.jpeg" alt="profile">
+        </div>
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+  <h2 class="section-title" style="padding-bottom: 12px;">About Me</h2>
+  <p class="section-subtitle">My introduction</p>
+
+  <div class="about-container">
+
+    <!-- LEFT IMAGE -->
+    <div class="about-img">
+      <img src="Manishaimg4.png" alt="about image">
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="about-content">
+      <p>
+        Hi, I'm Manisha. I completed my undergraduate degree in engineering
+        from Sri Indu College Of Engineering & Technology. As a fresh graduate,
+        I’m eager to kick-start my career and apply my knowledge and skills in a
+        professional setting. I’m actively seeking job opportunities where I can
+        contribute, learn, and grow within a dynamic team.
+      </p>
+    </div>
+    </div>
+    <div class="cards">
+      <div class="stats">
+                <div class="stat-item">
+                    <h3>08.10</h3>
+                    <p>Aggregate<br>CGPA</p>
+                </div>
+                <div class="stat-item">
+                    <h3>04+</h3>
+                    <p>Projects</p>
+                </div>
+                <div class="stat-item">
+                    <h3>03+</h3>
+                    <p>Months<br>experience</p>
+                </div>
+    </div>
+    </div>
+  
+    <a href="#" class="btn-download">
+      Download CV <i class="fas fa-download"></i>
+    </a>
+</section>
+
+<!-- SKILLS SECTION -->
+<section class="my_skills" id="my_skills">
+  <div class="skills-container">
+    <div class="section-skills-header">
+      <h2 class="section-skills-title" style="padding-bottom: 12px;">Skills</h2>
+      <span class="section-skills-subtitle">My technical level</span>
+    </div>
+
+    <div class="skills-content">
+        
+        <div class="skills-group">
+            <div class="skills-header" onclick="toggleSkills(this)">
+                <i class="ri-edit-box-line skills-icon"></i>
+                <h3 class="skills-title">Programming Languages</h3>
+                <i class="ri-arrow-down-s-line skills-arrow"></i>
+            </div>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>SQL</li>
+            </ul>
+        </div>
+
+        <div class="skills-group">
+            <div class="skills-header" onclick="toggleSkills(this)">
+                <i class="ri-palette-line skills-icon"></i>
+                <h3 class="skills-title">Technologies/Frameworks/Tools</h3>
+                <i class="ri-arrow-down-s-line skills-arrow"></i>
+            </div>
+            <ul class="skills-list">
+                <li>Django</li>
+                <li>Git/GitHub</li>
+                <li>VS Code</li>
+            </ul>
+        </div>
+
+        <div class="skills-group">
+            <div class="skills-header" onclick="toggleSkills(this)">
+                <i class="ri-code-s-slash-line skills-icon"></i>
+                <h3 class="skills-title">IT Constructs</h3>
+                <i class="ri-arrow-down-s-line skills-arrow"></i>
+            </div>
+            <ul class="skills-list">
+                <li>DSA</li>
+                <li>OOPS</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<!-- QUALIFICATION -->
+ <section class="qualification" id="qualification">
+  <div class="education-section">
+    <div class="education-header">
+      <h1 style="padding-bottom: 12px;">Qualification</h1>
+      <p>My personal journey</p>
+    </div>
+    <div class="section-header">
+        <i class="ri-graduation-cap-line"></i>
+        <span>Education</span>
+    </div>
+
+    <div class="timeline">
+        
+        <div class="timeline-item left">
+            <div class="dot"></div>
+            <h3 class="item-title">SSC</h3>
+            <span class="item-subtitle">Jan Peter Memorial School</span>
+            <div class="item-date">
+                <i class="ri-calendar-line"></i> - 2018
+            </div>
+            <a href="javascript:void(0)" class="view-more" onclick="openModal('ssc-modal')">
+                View More <i class="ri-arrow-right-line"></i>
+            </a>
+
+<div id="ssc-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal('ssc-modal')">
+            <i class="ri-close-line"></i>
+        </span>
+        <h2 class="modal-title">Class 10th Summary :</h2>
+        <ul class="modal-list">
+            <li><i class="ri-checkbox-circle-line"></i> Subjects studied: Science, Maths, English, Social Studies, Telugu, Hindi.</li>
+            <li><i class="ri-checkbox-circle-line"></i> Scored 9.3 GPA</li>
+        </ul>
+    </div>
+</div>
+        </div>
+
+        <div class="timeline-item right">
+            <div class="dot"></div>
+            <h3 class="item-title">Class 12th</h3>
+            <span class="item-subtitle">Sankalp Junior Kalasala</span>
+            <div class="item-date">
+                <i class="ri-calendar-line"></i> - 2020
+            </div>
+            <a href="javascript:void(0)" class="view-more" onclick="openModal('inter-modal')">
+    View More <i class="ri-arrow-right-line"></i>
+</a>
+
+<div id="inter-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal('inter-modal')">
+            <i class="ri-close-line"></i>
+        </span>
+        <h2 class="modal-title">Class 12th Summary :</h2>
+        <ul class="modal-list">
+            <li><i class="ri-checkbox-circle-line"></i> Subjects studied: Science, Maths, Physics,Chemistry,Sanskrit</li>
+            <li><i class="ri-checkbox-circle-line"></i> Scored 927 Marks</li>
+        </ul>
+    </div>
+</div>
+        </div>
+
+        <div class="timeline-item left">
+            <div class="dot"></div>
+            <h3 class="item-title">College</h3>
+            <span class="item-subtitle">Sri Indu College Of Engineering & Technology, Rangareddy</span>
+            <div class="item-date">
+                <i class="ri-calendar-line"></i> 2021 - 2024
+            </div>
+            <a href="javascript:void(0)" class="view-more" onclick="openModal('college-modal')">
+    View More <i class="ri-arrow-right-line"></i>
+</a>
+
+<div id="college-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal('college-modal')">
+            <i class="ri-close-line"></i>
+        </span>
+        <h2 class="modal-title">College Summary :</h2>
+        <ul class="modal-list">
+            <li><i class="ri-checkbox-circle-line"></i> Subjects studied: Linear Algebra, Calculas and Statistics, Programming For Problem Solving, DSA, DBMS, Design analysis and algorithm, Operating systems, Digital Logic Design, Ai, ML,Design Analysis and Algorithms, Web Technologies, Software Engineering and Computer architecture .</li>
+            <li><i class="ri-checkbox-circle-line"></i> Scored 8.10 GPA</li>
+        </ul>
+    </div>
+</div>
+        </div>
+
+    </div>
+</div>
+ </section>
+
+ <!-- Projects -->
+ <section class="portfolio section" id="projects">
+  <div class="pro-header">
+    <div class="projec">
+      <h1 style="padding-bottom: 12px;">Projects</h1>
+    <p>Most recent work</p>
+    </div>
+  </div>
+    <div class="portfolio-container">
+      <span class="project-left-arrow"><i class="fa-solid fa-angle-left"></i></span>
+      <!-- 1st list -->
+      <div class="project-container">
+        <div class="project-image">
+          <img src="orderit.png" alt="">
+        </div>
+        <div class="project-body">
+          <span>1</span>
+          <h4>ORDER IT(Food App)</h4>
+          <p>A full-stack web application that allows users to browse menus, place orders, and track deliveries from local restaurants. Built with React, Node.js, Express.js, and MongoDB. User Authentication -- Secure user accounts and role-based access control, managed in MongoDB.
+          Menu Management -- Restaurants can easily update their menus in real-time, with data stored in a flexible MongoDB schema.
+          Order Tracking -- Real-time order updates and history, stored and retrieved from MongoDB.</p>
+        </div>
+        <div class="project-github">
+          <a href="https://github.com/Medipal123">Github Repository<i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+<!-- 2nd list -->
+      <div class="project-container">
+        <div class="project-image">
+          <img src="Qr code.png" alt="">
+        </div>
+        <div class="project-body">
+          <span>2</span>
+          <h4>QR Code Smart Psrking System</h4>
+          <p>A Python-based smart parking system that utilizes QR codes to automate parking access and provide real-time parking availability.QR code generation and scanning for user authentication and parking slot identification.
+          Real-time parking slot availability updates.
+          Automated gate control using QR code scanning.
+          Database storage of parking spot availablity.</p>
+        </div>
+        <div class="project-github">
+          <a href="https://github.com/Medipal123">Github Repository<i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <!-- 3rd list -->
+
+      <div class="project-container">
+        <div class="project-image">
+          <img src="ecommerce.png" alt="">
+        </div>
+        <div class="project-body">
+          <span>3</span>
+          <h4>Electronic Ecommerce</h4>
+          <p>A fully functional e-commerce website for purchasing electronic products, featuring user authentication, product management, shopping cart functionality, and secure payment integration.Secure user registration and login system.
+          Search and filtering options for easy product discovery.
+          Robust shopping cart and checkout process with payment gateway integration (Stripe).
+          Order processing and tracking system.</p>
+        </div>
+        <div class="project-github">
+          <a href="https://github.com/Medipal123">Github Repository<i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="project-container">
+        <div class="project-image">
+          <img src="fraudulent.jfif" alt="">
+        </div>
+        <div class="project-body">
+          <span>4</span>
+          <h4>Fraudulent Credit Card Activity Detection</h4>
+          <p>Designed and implemented a fraud detection system using Adaptive Boosting and Aggregate Voting algorithms. The project focuses on mitigating financial loss by identifying suspicious credit card patterns and verifying the authenticity of users, effectively balancing model efficacy with real-world data constraints.</p>
+        </div>
+        <div class="project-github">
+          <a href="https://github.com/Medipal123">Github Repository<i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <span class="project-right-arrow"><i class="fa-solid fa-angle-right"></i></span>
+    </div>
+</section>
+
+<!-- CONTACT ME -->
+<section class="contact section" id="contact">
+    <div class="contact-section-header">
+      <h1 class="section-contact-title" style="padding-bottom: 12px;">Contact Me</h1>
+    <span class="section-contact-subtitle">Get in touch</span>
+    </div>
+
+    <div class="contact-container container grid">
+        <div>
+            <div class="contact-info">
+                <i class="ri-phone-line contact-icon"></i>
+                <div>
+                    <h3 class="contact-title">Contact Me</h3>
+                    <span class="contact-subtitle">8688719829</span>
+                </div>
+            </div>
+
+            <div class="contact-info">
+                <i class="ri-mail-line contact-icon"></i>
+                <div>
+                    <h3 class="contact-title">Email</h3>
+                    <span class="contact-subtitle">medipallimanisha10@gmail.com</span>
+                </div>
+            </div>
+
+            <div class="contact-info">
+                <i class="ri-map-pin-line contact-icon"></i>
+                <div>
+                    <h3 class="contact-title">Location</h3>
+                    <span class="contact-subtitle">Hyderabad, Telangana, India</span>
+                </div>
+            </div>
+        </div>
+
+        <form action="" class="contact-form grid">
+            <div class="contact-inputs grid">
+                <div class="contact-content">
+                    <label for="" class="contact-label">Name</label>
+                    <input type="text" class="contact-input">
+                </div>
+                <div class="contact-content">
+                    <label for="" class="contact-label">Email</label>
+                    <input type="email" class="contact-input">
+                </div>
+            </div>
+            <div class="contact-content-textarea">
+                <label for="" class="contact-label">Message</label>
+                <textarea name="" id="" cols="0" rows="7" class="contact-input"></textarea>
+            </div>
+
+            <div>
+                <button type="submit" class="button button-flex">
+                    Send Message
+                    <i class="ri-send-plane-fill button-icon"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
