@@ -37,8 +37,8 @@
     <div class="hero-left">
     
         <div class="social-icons">
-            <i class="ri-linkedin-line"></i>
-            <i class="ri-github-line"></i>
+            <a href="https://www.linkedin.com/in/manisha-medipalli-1195a3225/" style="text-decoration: none;"><i class="ri-linkedin-line" ></i></a>
+            <a href="https://github.com/Medipal123" style="text-decoration: none;"><i class="ri-github-line"></i></a>
         </div>
 
         <div class="hero-middle">
@@ -378,31 +378,47 @@
             </div>
         </div>
 
-        <form action="" class="contact-form grid">
-            <div class="contact-inputs grid">
-                <div class="contact-content">
-                    <label for="" class="contact-label">Name</label>
-                    <input type="text" class="contact-input">
-                </div>
-                <div class="contact-content">
-                    <label for="" class="contact-label">Email</label>
-                    <input type="email" class="contact-input">
-                </div>
-            </div>
-            <div class="contact-content-textarea">
-                <label for="" class="contact-label">Message</label>
-                <textarea name="" id="" cols="0" rows="7" class="contact-input"></textarea>
-            </div>
+        <form action="" class="contact-form grid" id="contact-form">
+    <div class="contact-inputs grid">
+        <div class="contact-content">
+            <label for="name" class="contact-label">Name</label>
+            <input type="text" id="name" class="contact-input" required>
+        </div>
+        <div class="contact-content">
+            <label for="email" class="contact-label">Email</label>
+            <input type="email" id="email" class="contact-input" required>
+        </div>
+    </div>
+    <div class="contact-content-textarea">
+        <label for="message" class="contact-label">Message</label>
+        <textarea id="message" cols="0" rows="7" class="contact-input" required></textarea>
+    </div>
 
-            <div>
-                <button type="submit" class="button button-flex">
-                    Send Message
-                    <i class="ri-send-plane-fill button-icon"></i>
-                </button>
-            </div>
-        </form>
+    <div>
+        <button type="submit" class="button button-flex">
+            Send Message
+            <i class="ri-send-plane-fill button-icon"></i>
+        </button>
+    </div>
+</form>
     </div>
 </section>
+
+<footer class="main-footer">
+    <div class="footer-brand">
+        <h1>Manisha</h1>
+        <p>Fresher</p>
+    </div>
+    <div class="footer-links">
+        <a href="#qualification">Qualification</a>
+        <a href="#projects">Portfolio</a>
+        <a href="#contact">Contact Me</a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <div class="footer-copy">
+        <span>© Manisha. All right reserved</span>
+    </div>
+</footer>
 <script src="script.js"></script>
 </body>
 </html>

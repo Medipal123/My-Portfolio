@@ -121,3 +121,26 @@ leftArrow.addEventListener('click', prevProject);
 // 6. Initialize the slider
 showProject(currentIndex);
 startTimer();
+
+// send message
+const contactForm = document.getElementById('contact-form');
+
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevents the page from reloading
+
+        // Get values from your specific IDs
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        // Your email address where you want to receive messages
+        const myEmail = "medipallimanisha10@gmail.com";
+
+        // Build the mailto link
+        // We use encodeURIComponent to handle spaces and special characters safely
+        const subject = encodeURIComponent(`Message from ${name}`);
+        const body = encodeURIComponent(`From: ${name} (${email})\n\nMessage:\n${message}`);
+
+        // This line triggers the "How do you want to open this?" system popup
+        window.location.href = `mailto:${myEmail}?subject=${subject}&body=${body}`;
+    });

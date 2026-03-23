@@ -814,3 +814,68 @@ button {
     margin: 90px 0 30px 0;
     text-align: center;
 }
+
+/* Footer Layout using your :root variables */
+.main-footer {
+    height: 200px;
+    display: flex;
+    justify-content: space-around; /* Horizontal spacing like your images */
+    align-items: center;
+    padding: 40px 20px;
+    
+    /* Using your variables here */
+    background-color: var(--bg-color); 
+    color: var(--text-white);
+    
+    transition: all 0.3s ease; /* Smooth color transition */
+}
+
+/* BRAND SECTION */
+.footer-brand h1 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.footer-brand p {
+    color: var(--text-gray); /* Using your gray variable */
+    font-size: 0.9rem;
+}
+
+/* LINKS SECTION */
+.footer-links a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: var(--text-white);
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    color: var(--accent-purple); /* Using your accent color */
+}
+
+/* COPYRIGHT SECTION */
+.footer-copy span {
+    color: var(--text-gray);
+    font-size: 0.85rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .main-footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+}
+
+/* Override to keep the footer colorful in Light Theme like your screenshot */
+.light-theme .main-footer {
+    background-color: var(--accent-purple); /* Force purple background */
+    color: #ffffff; /* Force white text even in light mode */
+}
+
+.light-theme .main-footer .footer-brand p,
+.light-theme .main-footer .footer-copy span,
+.light-theme .main-footer .footer-links a {
+    color: rgba(255, 255, 255, 0.8); /* Lighter white for the sub-text */
+}
