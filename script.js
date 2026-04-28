@@ -122,7 +122,8 @@ leftArrow.addEventListener('click', prevProject);
 showProject(currentIndex);
 startTimer();
 
-// send message
+
+// ---------------------------send message
 const contactForm = document.getElementById('contact-form');
 
     contactForm.addEventListener('submit', function(e) {
@@ -144,3 +145,52 @@ const contactForm = document.getElementById('contact-form');
         // This line triggers the "How do you want to open this?" system popup
         window.location.href = `mailto:${myEmail}?subject=${subject}&body=${body}`;
     });
+
+
+    const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("nav a");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 100;
+    const sectionHeight = section.clientHeight;
+
+    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === `#${current}`) {
+      link.classList.add("active");
+    }
+  });
+});
+
+
+
+// ToggleMenu of Navbar
+function toggleMenu() {
+  const nav = document.getElementById("nav-menu");
+  const icon = document.getElementById("menu-icon");
+
+  nav.classList.toggle("show-menu");
+
+  // Change icon (menu ↔ close)
+  if (nav.classList.contains("show-menu")) {
+    icon.classList.replace("ri-menu-line", "ri-close-line");
+  } else {
+    icon.classList.replace("ri-close-line", "ri-menu-line");
+  }
+}
+
+
+document.querySelectorAll('#nav-menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById("nav-menu").classList.remove("show-menu");
+    document.getElementById("menu-icon").classList.replace("ri-close-line", "ri-menu-line");
+  });
+});
