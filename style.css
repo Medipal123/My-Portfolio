@@ -5,6 +5,11 @@
   font-family: 'Poppins', sans-serif;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 :root {
   --bg-color: #0b0b1a;      
   --container-bg: #0b0f2a;  /* Darker navy for header/inputs */
@@ -883,22 +888,22 @@ button {
     right: 0;
     width: 100%;
     background-color: var(--container-bg);
-
+    
+    /* Change from 3 columns to 2 or 1 for better fit */
     display: grid;
-     grid-template-columns: repeat(3, 1fr); /* 3 items per row */
-    /* gap: 10px; */
-    /* padding: 15px; */
-
+    grid-template-columns: repeat(2, 1fr); 
+    
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 100;
   }
 
   nav a {
-    padding: 15px;
-    width: 100%;
-    text-align: center;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding: 20px; /* Increase hit area for thumbs */
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    font-size: 0.9rem;
   }
 
   nav.show-menu {
@@ -1051,6 +1056,15 @@ button {
     text-align: left;
   }
 
+  .timeline {
+    background: transparent; /* Optional: makes it look cleaner on mobile */
+    overflow: hidden;
+}
+.timeline-item.left, 
+.timeline-item.right {
+    padding: 0 15px 0 50px !important;
+    width: 100%;
+}
   .dot {
     left: 13px !important;
   }
@@ -1132,14 +1146,20 @@ button {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    align-items: flex-start;
+    align-items: flex-start;height: auto; /* Allow it to grow with content */
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center everything on mobile */
+    text-align: center;
+    gap: 30px;
   }
 
   .footer-links{
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: flex-start;
+    flex-direction: column; /* Stack links vertically */
+    gap: 15px;
+    align-items: center;
   }
 
 
